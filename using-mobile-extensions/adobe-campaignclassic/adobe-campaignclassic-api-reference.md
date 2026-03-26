@@ -411,7 +411,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
   @Override
   public void onMessageReceived(RemoteMessage remoteMessage) {
     Log.d("TestApp", "Receive message from: " + remoteMessage.getFrom());
-    Map<String,String> payloadData = message.getData();
+    Map<String,String> payloadData = remoteMessage.getData();
 
     // Check if message contains data payload.
     if (payloadData.size() > 0) {
