@@ -117,7 +117,7 @@ MobileCore.lifecycleStart(null);
 If you need to collect additional lifecycle data:
 
 ```text
-contextData.put("myapp.category", "Game");
+additionalContextData.put("myapp.category", "Game");
 MobileCore.lifecycleStart(additionalContextData);
 ```
 
