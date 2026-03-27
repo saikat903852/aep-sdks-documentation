@@ -82,7 +82,7 @@ To include additional data with lifecycle metric calls, pass an additional param
 @Overridepublic 
 void onResume() {    
   HashMap<String, Object> additionalContextData = new HashMap<String, Object>();    
-  contextData.put("myapp.category", "Game");    
+  additionalContextData.put("myapp.category", "Game");    
   MobileCore.lifecycleStart(additionalContextData);}
 ```
 
